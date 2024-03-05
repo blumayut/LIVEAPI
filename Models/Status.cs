@@ -1,4 +1,4 @@
-﻿namespace live.Controllers.Models
+﻿namespace live.Models
 {
     public class Status
     {
