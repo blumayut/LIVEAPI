@@ -4,10 +4,14 @@
     {
         public Guid Id { get; set; }
         public string ?Email { get; set; }
-        public string ?Telphon { get; set; }
+        public string? Telephone { get; set; }
+        public string? SecondTelephone { get; set; }
+        public bool IsConfirmSms { get; set; }
+        public bool IsConfirmEmail { get; set; }
+        
         public bool IsEmailConfirmed { get; set; }
         public bool IsConfirmeSms { get; set; }
-        public string ?Adress { get; set; }
+        public Guid ?AdressId { get; set; }
 
 
     }
