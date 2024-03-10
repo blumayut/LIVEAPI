@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using live.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace live.Data
 {
@@ -9,7 +10,10 @@ namespace live.Data
 
         }
 
-        DbSet<>
+        public DbSet<User> Users { get; set; }
+        public DbSet<Localtion> Localtions { get; set; }
+
+
 
     }
 }
