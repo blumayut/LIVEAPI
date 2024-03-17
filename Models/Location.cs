@@ -1,6 +1,6 @@
 ﻿namespace live.Models
 {
-    public class Localtion
+    public class Location
     {
         public Guid Id { get; set; }
         public string? Name { get; set; }

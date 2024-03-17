@@ -12,6 +12,6 @@
         public DateTime? LimidetTime { get; set; }
         public Guid LocationId { get; set; }
 
-        public Localtion Location { get; set; }
+        public Location Location { get; set; }
     }
 }

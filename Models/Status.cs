@@ -7,7 +7,7 @@
         public Categorie Categorie { get; set; }
         public Address Address { get; set; }
         public CellPlan CellPlan { get; set; }
-        public Localtion Localtion  { get; set; }
+        public Location Localtion  { get; set; }
         public Product Product { get; set; }
         public Store Store { get; set; }
         public User User { get; set; }
