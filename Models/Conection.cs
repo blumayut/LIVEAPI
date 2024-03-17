@@ -11,7 +11,7 @@
         
         public bool IsEmailConfirmed { get; set; }
         public bool IsConfirmeSms { get; set; }
-        public Guid ?AdressId { get; set; }
+        public virtual Address ?Adress { get; set; }
 
 
     }

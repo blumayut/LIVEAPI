@@ -10,8 +10,7 @@ namespace live.Data
 
         }
 
-        public DbSet<User> Users { get; set; }
-        public DbSet<Localtion> Localtions { get; set; }
+     
 
 
 

@@ -7,7 +7,10 @@
         public float ?Price { get; set; }
         public int ?Count { get; set; } 
         public bool ?IsActive   { get; set; }
-        public Guid Status { get; set; }    
+        public Guid CategorieId { get; set; }   
+        public  Categorie Categorie { get; set; }
+        public Guid StatusId { get; set; }
+        public virtual Status Status { get; set; }    
          
     }
 }

@@ -4,11 +4,13 @@
     {
         public Guid Id { get; set; }
         public string NameCategorie { get; set; }
-        public Categorie fatherCategorie { get; set; }
+        public Categorie Parent { get; set; }
         public bool IsActive { get; set; }
-        public Status Status { get; set; }
-        public virtual Store ?Store { get; set; }
-        public virtual Product ?Product  { get; set; }
+        public Guid StatusId { get; set; }
+        public virtual Status Status { get; set; }
+        public  ICollection<Store>  ?Store { get; set; }
+        public  ICollection< Product> ?Product  { get; set; }
+        public  ICollection<Categorie> Childrens { get; set; }
 
 
     }
