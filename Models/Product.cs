@@ -8,6 +8,6 @@
         public int ?Count { get; set; } 
         public bool ?IsActive   { get; set; }
         public Guid Status { get; set; }    
-
+         
     }
 }
