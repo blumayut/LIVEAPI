@@ -1,4 +1,6 @@
-﻿namespace live.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace live.Models
 {
     public class Product
     {
@@ -8,9 +10,15 @@
         public int ?Count { get; set; } 
         public bool ?IsActive   { get; set; }
         public string ?img { get; set; }
-        public Guid CategorieId { get; set; }   
-        public  Categorie Categorie { get; set; }
-         public virtual Status Status { get; set; }    
+        public Guid CategorieId { get; set; }
+
+
+        [ForeignKey("CategorieId")]
+
+        public Categorie Categorie { get; set; }
+        [ForeignKey("StatusId")]
+
+        public virtual Status Status { get; set; }    
          
     }
 }

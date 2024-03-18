@@ -1,7 +1,11 @@
-﻿namespace live.Models
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace live.Models
 {
     public class Address
     {
+        [Key,ForeignKey("Conection")]
         public Guid Id { get; set; }
         public string ?City { get; set; }
         
