@@ -11,6 +11,7 @@
         public string ?Floor { get; set; }
         public string ?Entrance { get; set; }
         public string ?Street { get; set; }
+        public Guid ConectionId { get; set; }
         public virtual Conection Conection { get; set; }    
     }
 }
