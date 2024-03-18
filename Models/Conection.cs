@@ -9,10 +9,10 @@
         public bool IsConfirmSms { get; set; }
         public bool IsConfirmEmail { get; set; }
         
-        public bool IsEmailConfirmed { get; set; }
-        public bool IsConfirmeSms { get; set; }
-        public virtual Address ?Adress { get; set; }
+   
 
+        public virtual Address Address { get; set; }
+        public virtual Store Store { get; set; }
 
     }
 }

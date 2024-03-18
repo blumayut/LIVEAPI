@@ -9,11 +9,11 @@
         public string Email { get; set; }
         public string ?Telephon { get; set; }
         public bool IsActive { get; set; }
-        public Guid StatusId { get; set; }
-
-        public Status Status { get; set; }    
+         public virtual Status Status { get; set; }    
         public ICollection< CellPlan> ?CellPlans { get; set; }  
         public ICollection<Store> ?Stores { get; set; }
-        public Conection Conection { get; set; }
+        public bool IsConfirmSms { get; set; }
+        public bool IsConfirmEmail { get; set; }
+
     }
 }
